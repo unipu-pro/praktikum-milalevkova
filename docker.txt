@@ -1,49 +1,11 @@
-DOCKER EXERCISE - RESULTS
-
-1. Docker environment
-- Docker Desktop successfully connected to WSL.
-- Docker version: 29.1.3
-- hello-world container executed successfully.
-
-2. Docker images and containers
-- Ubuntu 24.04 tested.
-- Debian trixie-slim tested.
-- Alpine 3.24 tested.
-- Custom tools:0.1 image built successfully.
-- jq and git tested inside the container.
-
-3. Docker networking
-- Created demo-net bridge network.
-- Nginx container started on demo-net.
-- Alpine client successfully accessed Nginx using Docker DNS.
-
-4. Ollama CLI Docker image
-- Built praktikum-llm:1.1.0.
-- CLI help displayed successfully.
-- Version command returned: llm 1.1.0.
-- Runtime image uses Python 3.13 Alpine.
-
-5. Multi-stage build
-- Base stage installs runtime dependencies.
-- Test stage installs pytest and runs tests.
-- Runtime stage contains only application dependencies.
-- All 7 Python tests passed.
-- pytest is not installed in the runtime image.
-
-6. Security
-- Runtime container runs as non-root user.
-- User UID: 10001.
-
-7. Ollama connectivity
-- Ollama server accessible at host.docker.internal:11434.
-- Model llama3.2:1b available.
-- CLI status command successful.
-- CLI ask command successfully generated an answer.
-
-8. SIGTERM
-- Started interactive chat container.
-- Stopped container using docker stop.
-- Container exit code: 143.
-- Test container removed successfully.
-
-RESULT: All performed Docker checks completed successfully.
+## docker build --target test
+#13 2.156 ============================== 7 passed in 0.49s ===============================
+## version
+llm 1.1.0
+## user
+uid=10001(app) gid=10001(app) groups=10001(app)
+## status
+Ollama is running at http://host.docker.internal:11434
+## stop
+stopped in 0.440 s
+exit code 143
