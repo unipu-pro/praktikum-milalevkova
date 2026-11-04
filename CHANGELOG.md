@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.0](https://github.com/unipu-pro/praktikum-milalevkova/compare/v1.1.0...v1.2.0) (2026-11-04)
+
+
+### Features
+
+* containerize the Ollama CLI with Docker ([6e91010](https://github.com/unipu-pro/praktikum-milalevkova/commit/6e91010253570937a5f93940ec63aca341f9fbb6))
+* containerize the Ollama CLI with Docker ([a1c9cb9](https://github.com/unipu-pro/praktikum-milalevkova/commit/a1c9cb9397384f6be98fe8b7a7c6fea025f53ebf))
+
 ## [1.1.0](https://github.com/unipu-praktikum-razvojne-operacije/praktikum-milalevkova/compare/v1.0.1...v1.1.0) (2026-10-25)
 
 
