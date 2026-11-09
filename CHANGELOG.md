@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/unipu-pro/praktikum-milalevkova/compare/v1.1.0...v1.2.0) (2026-11-09)
+
+
+### Features
+
+* add Ollama, Open WebUI and tests to Docker Compose ([23d4d0a](https://github.com/unipu-pro/praktikum-milalevkova/commit/23d4d0acf9c669b801c01dd705c1fa1c8fc6c510))
+* add Ollama, Open WebUI and tests to Docker Compose ([054a6cf](https://github.com/unipu-pro/praktikum-milalevkova/commit/054a6cf0138d7389cd4ab4f5ea52bd6c7a5568fd))
+* containerize the Ollama CLI with Docker ([6e91010](https://github.com/unipu-pro/praktikum-milalevkova/commit/6e91010253570937a5f93940ec63aca341f9fbb6))
+* containerize the Ollama CLI with Docker ([a1c9cb9](https://github.com/unipu-pro/praktikum-milalevkova/commit/a1c9cb9397384f6be98fe8b7a7c6fea025f53ebf))
+* run the CLI with Docker Compose ([2639673](https://github.com/unipu-pro/praktikum-milalevkova/commit/26396738631489991fc1d6a0715582f45d472555))
+* run the CLI with Docker Compose ([2c91dfa](https://github.com/unipu-pro/praktikum-milalevkova/commit/2c91dfafad9e04aca426e6f44f5b047e5faf959d))
+
 ## [1.1.0](https://github.com/unipu-praktikum-razvojne-operacije/praktikum-milalevkova/compare/v1.0.1...v1.1.0) (2026-10-25)
 
 
