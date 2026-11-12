@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/unipu-pro/praktikum-milalevkova/compare/v1.2.0...v1.2.1) (2026-11-12)
+
+
+### Bug Fixes
+
+* correct hello workflow YAML structure ([1ba2c38](https://github.com/unipu-pro/praktikum-milalevkova/commit/1ba2c38be391e11b9e22252875a931c1bd729a71))
+
 ## [1.2.0](https://github.com/unipu-pro/praktikum-milalevkova/compare/v1.1.0...v1.2.0) (2026-11-09)
 
 
