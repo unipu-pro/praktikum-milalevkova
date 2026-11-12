@@ -1,0 +1,40 @@
+name: Hello and Goodbye
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      greeting:
+        description: "Greeting message"
+        required: true
+        default: "Hello"
+        type: string
+      show-context:
+        description: "Show GitHub context"
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    outputs:
+      message: ${{ steps.greeting.outputs.message }}
+    steps:
+      - name: Create greeting
+        id: greeting
+        run: |
+          echo "message=${{ inputs.greeting || 'Hello' }}" >> "$GITHUB_OUTPUT"
+          echo "## ${{ inputs.greeting || 'Hello' }}" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Show context
+        if: ${{ inputs.show-context }}
+        run: echo '${{ toJSON(github) }}'
+
+  goodbye:
+    runs-on: ubuntu-latest
+    needs: hello
+    steps:
+      - name: Say goodbye
+        run: echo "Goodbye! The greeting was: ${{ needs.hello.outputs.message }}" >> "$GITHUB_STEP_SUMMARY"
