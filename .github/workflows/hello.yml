@@ -37,4 +37,7 @@ jobs:
     needs: hello
     steps:
       - name: Say goodbye
-        run: echo "Goodbye! The greeting was: ${{ needs.hello.outputs.message }}" >> "$GITHUB_STEP_SUMMARY"
+        env:
+          MESSAGE: ${{ needs.hello.outputs.message }}
+        run: |
+          echo "Goodbye! The greeting was: $MESSAGE" >> "$GITHUB_STEP_SUMMARY"
