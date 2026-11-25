@@ -9,3 +9,4 @@ pytest.txt
 docker.txt
 storage.txt
 compose.txt
+*.tgz

@@ -2,7 +2,7 @@ import llm
 
 
 def test_read_version():
-    assert llm.read_version() == "1.1.0"
+    assert llm.read_version() == "1.2.0"
 
 
 def test_read_version_when_file_is_missing(monkeypatch, tmp_path):
